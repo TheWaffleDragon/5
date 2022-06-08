@@ -5,7 +5,7 @@ class Movie:
         self.genre = genre
         self.times_seen = times_seen
     def play(self, times_seen):
-        times_seen+=1
+        self.times_seen+=1
     def __repr__(self):
         return f"{self.title}({self.year})"
         
@@ -16,7 +16,7 @@ class TvShow(Movie):
         self.epi = epi
         self.season = season
     def play(self, times_seen):
-        times_seen+=1
+        self.times_seen+=1
     def __repr__(self):
         return f"{self.title} S{self.season}E{self.epi}"
  
